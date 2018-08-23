@@ -4,7 +4,7 @@ from .models import Post
 
 # Create your views here.
 
-class IndexVire(generic.ListView):
+class IndexView(generic.ListView):
     model = Post
     paginate_by = 5
     ordering = ['-updated_at']
